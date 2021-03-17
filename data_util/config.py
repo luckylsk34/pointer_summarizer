@@ -35,3 +35,14 @@ max_iterations = 500000
 use_gpu=True
 
 lr_coverage=0.15
+
+
+# My Config
+train_data_path = "/content/cnn-dailymail/finished_files/chunked/train_*"
+eval_data_path = "/content/cnn-dailymail/finished_files/chunked/val_*"
+decode_data_path = "/content/cnn-dailymail/finished_files/chunked/test_*"
+vocab_path = "/content/cnn-dailymail/finished_files/vocab"
+log_root = "/content/log"
+ 
+is_coverage = True
+min_dec_steps=15
