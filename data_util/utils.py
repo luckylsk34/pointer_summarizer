@@ -2,7 +2,9 @@
 import os
 import pyrouge
 import logging
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def print_results(article, abstract, decoded_output):
   print ("")

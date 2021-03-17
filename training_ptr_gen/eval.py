@@ -4,7 +4,9 @@ import os
 import time
 import sys
 
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import torch
 
 from data_util import config

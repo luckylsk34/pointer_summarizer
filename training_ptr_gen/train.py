@@ -4,7 +4,9 @@ import os
 import time
 import argparse
 
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import torch
 from model import Model
 from torch.nn.utils import clip_grad_norm_
